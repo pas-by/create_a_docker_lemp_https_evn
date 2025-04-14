@@ -1,0 +1,9 @@
+FROM php:8.3.20-fpm-alpine3.20
+
+# Install pdo_mysql
+RUN docker-php-ext-install pdo pdo_mysql
+
+#  generate self-signed certificate
+#  RUN openssl req -x509 -nodes -days 365000 -newkey rsa:2048 -keyout /var/www/key.pem -out /var/www/cert.pem -subj "/C=US/ST=California/L=San Francisco/O=My Company/CN=ssldocker.test"
+
+CMD ["php-fpm"]
