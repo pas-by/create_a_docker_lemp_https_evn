@@ -3,9 +3,11 @@ docker compose files to create a basic LEMP environment with https
 
 # How to use
 in the directory of file named docker-compose.yml, run
+
 $ docker compose up -d --build
 
 Note : if your docker failed to pull the images just by ymal, pull them one by one.
+
        Then, run the "docker compose up". 
 
 after the servers were started,
